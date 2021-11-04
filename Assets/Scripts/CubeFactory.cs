@@ -28,6 +28,7 @@ public class CubeFactory : MonoBehaviour
             cubepos.y -= .36f;
             newCube.transform.position = cubepos;
             newCube.transform.rotation = _cubeFactoryObj.transform.rotation;
+            newCube.layer = 10;  //Grabbable
             
             // Must not have glueable tag on creation or wonky stuff happens
             newCube.tag = "Untagged";
